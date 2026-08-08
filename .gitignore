@@ -1,0 +1,18 @@
+# Visual Studio user-specific files
+*.suo
+*.user
+
+# Visual Studio folders
+.vs/
+
+# Build output
+bin/
+obj/
+
+# Debug/Release output
+Debug/
+Release/
+
+# Temporary files
+*.tmp
+*.log
