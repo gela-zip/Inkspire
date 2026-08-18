@@ -24,7 +24,6 @@ Partial Class frmItemEdit
     Private Sub InitializeComponent()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -43,15 +42,16 @@ Partial Class frmItemEdit
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtItemIDNum = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnSave
@@ -77,17 +77,6 @@ Partial Class frmItemEdit
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(932, 119)
         Me.Panel1.TabIndex = 101
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.PictureBox1.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__5_
-        Me.PictureBox1.Location = New System.Drawing.Point(457, -65)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(306, 277)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'btnCancel
         '
@@ -195,7 +184,7 @@ Partial Class frmItemEdit
         Me.TextBox5.Enabled = False
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.TextBox5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TextBox5.Location = New System.Drawing.Point(168, 13)
+        Me.TextBox5.Location = New System.Drawing.Point(185, 13)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(176, 26)
         Me.TextBox5.TabIndex = 40
@@ -298,9 +287,21 @@ Partial Class frmItemEdit
         Me.Label2.TabIndex = 90
         Me.Label2.Text = "ID number"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Navy
+        Me.Label1.Location = New System.Drawing.Point(104, 36)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(122, 29)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "Edit Item"
+        '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._19
+        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._211
         Me.PictureBox2.Location = New System.Drawing.Point(22, 21)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(72, 66)
@@ -308,17 +309,16 @@ Partial Class frmItemEdit
         Me.PictureBox2.TabIndex = 37
         Me.PictureBox2.TabStop = False
         '
-        'Label1
+        'PictureBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(104, 36)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(153, 29)
-        Me.Label1.TabIndex = 17
-        Me.Label1.Text = "Delete Item"
+        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PictureBox1.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__5_
+        Me.PictureBox1.Location = New System.Drawing.Point(457, -65)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(306, 277)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'frmItemEdit
         '
@@ -332,7 +332,6 @@ Partial Class frmItemEdit
         Me.Name = "frmItemEdit"
         Me.Text = "Edit - Item Management"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
@@ -341,6 +340,7 @@ Partial Class frmItemEdit
         Me.Panel3.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

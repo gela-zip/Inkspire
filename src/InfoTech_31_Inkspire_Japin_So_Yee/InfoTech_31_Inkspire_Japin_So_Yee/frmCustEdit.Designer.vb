@@ -44,12 +44,12 @@ Partial Class frmCustEdit
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtCustId = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.currDisc13 = New System.Windows.Forms.RadioButton()
         Me.currDisc8 = New System.Windows.Forms.RadioButton()
         Me.currDisc15 = New System.Windows.Forms.RadioButton()
-        Me.txtCustId = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -114,13 +114,13 @@ Partial Class frmCustEdit
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.GhostWhite
+        Me.Panel2.Controls.Add(Me.GroupBox3)
         Me.Panel2.Controls.Add(Me.GroupBox4)
         Me.Panel2.Controls.Add(Me.GroupBox5)
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.GroupBox6)
-        Me.Panel2.Controls.Add(Me.GroupBox3)
         Me.Panel2.Controls.Add(Me.txtCustId)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Location = New System.Drawing.Point(25, 137)
@@ -174,7 +174,7 @@ Partial Class frmCustEdit
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__6_2
+        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._191
         Me.PictureBox2.Location = New System.Drawing.Point(22, 21)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(72, 66)
@@ -186,13 +186,13 @@ Partial Class frmCustEdit
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label1.ForeColor = System.Drawing.Color.Navy
         Me.Label1.Location = New System.Drawing.Point(104, 36)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(218, 29)
+        Me.Label1.Size = New System.Drawing.Size(187, 29)
         Me.Label1.TabIndex = 17
-        Me.Label1.Text = "Delete Customer"
+        Me.Label1.Text = "Edit Customer"
         '
         'Panel3
         '
@@ -219,7 +219,7 @@ Partial Class frmCustEdit
         Me.txtCustSearchId.Enabled = False
         Me.txtCustSearchId.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.txtCustSearchId.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtCustSearchId.Location = New System.Drawing.Point(168, 13)
+        Me.txtCustSearchId.Location = New System.Drawing.Point(183, 13)
         Me.txtCustSearchId.Name = "txtCustSearchId"
         Me.txtCustSearchId.Size = New System.Drawing.Size(176, 26)
         Me.txtCustSearchId.TabIndex = 1
@@ -246,7 +246,7 @@ Partial Class frmCustEdit
         Me.GroupBox6.Controls.Add(Me.Label9)
         Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.GroupBox6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox6.Location = New System.Drawing.Point(22, 157)
+        Me.GroupBox6.Location = New System.Drawing.Point(28, 148)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(401, 147)
         Me.GroupBox6.TabIndex = 4
@@ -305,6 +305,28 @@ Partial Class frmCustEdit
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "Last name"
         '
+        'txtCustId
+        '
+        Me.txtCustId.Enabled = False
+        Me.txtCustId.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.txtCustId.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtCustId.Location = New System.Drawing.Point(133, 111)
+        Me.txtCustId.Name = "txtCustId"
+        Me.txtCustId.Size = New System.Drawing.Size(176, 26)
+        Me.txtCustId.TabIndex = 0
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label6.Location = New System.Drawing.Point(24, 114)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(87, 20)
+        Me.Label6.TabIndex = 18
+        Me.Label6.Text = "ID number"
+        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.currDisc13)
@@ -312,10 +334,10 @@ Partial Class frmCustEdit
         Me.GroupBox3.Controls.Add(Me.currDisc15)
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox3.Location = New System.Drawing.Point(457, 218)
+        Me.GroupBox3.Location = New System.Drawing.Point(457, 213)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(401, 68)
-        Me.GroupBox3.TabIndex = 10
+        Me.GroupBox3.TabIndex = 11
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Current Discount"
         '
@@ -352,33 +374,11 @@ Partial Class frmCustEdit
         Me.currDisc15.Text = "15%"
         Me.currDisc15.UseVisualStyleBackColor = True
         '
-        'txtCustId
-        '
-        Me.txtCustId.Enabled = False
-        Me.txtCustId.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.txtCustId.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtCustId.Location = New System.Drawing.Point(133, 111)
-        Me.txtCustId.Name = "txtCustId"
-        Me.txtCustId.Size = New System.Drawing.Size(176, 26)
-        Me.txtCustId.TabIndex = 0
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label6.Location = New System.Drawing.Point(24, 114)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(87, 20)
-        Me.Label6.TabIndex = 18
-        Me.Label6.Text = "ID number"
-        '
         'frmCustEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(931, 886)
+        Me.ClientSize = New System.Drawing.Size(929, 903)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
@@ -424,10 +424,10 @@ Partial Class frmCustEdit
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents txtCustId As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents currDisc13 As System.Windows.Forms.RadioButton
     Friend WithEvents currDisc8 As System.Windows.Forms.RadioButton
     Friend WithEvents currDisc15 As System.Windows.Forms.RadioButton
-    Friend WithEvents txtCustId As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

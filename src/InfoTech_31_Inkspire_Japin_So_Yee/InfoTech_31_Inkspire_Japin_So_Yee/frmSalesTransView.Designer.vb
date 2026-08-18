@@ -24,7 +24,6 @@ Partial Class frmSalesTransView
     Private Sub InitializeComponent()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.btnSearch = New System.Windows.Forms.Button()
         Me.txtSearchKey = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SalesTransDataGridView = New System.Windows.Forms.DataGridView()
@@ -41,18 +40,18 @@ Partial Class frmSalesTransView
         Me.txtSalesORNum = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnSaleTransClose = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         CType(Me.SalesTransDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -70,7 +69,6 @@ Partial Class frmSalesTransView
         '
         'GroupBox6
         '
-        Me.GroupBox6.Controls.Add(Me.btnSearch)
         Me.GroupBox6.Controls.Add(Me.txtSearchKey)
         Me.GroupBox6.Controls.Add(Me.Label2)
         Me.GroupBox6.Controls.Add(Me.SalesTransDataGridView)
@@ -82,23 +80,9 @@ Partial Class frmSalesTransView
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Search OR number to view transaction record"
         '
-        'btnSearch
-        '
-        Me.btnSearch.BackColor = System.Drawing.Color.White
-        Me.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Navy
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearch.ForeColor = System.Drawing.Color.Navy
-        Me.btnSearch.Location = New System.Drawing.Point(394, 38)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(89, 30)
-        Me.btnSearch.TabIndex = 106
-        Me.btnSearch.Text = "Search"
-        Me.btnSearch.UseVisualStyleBackColor = False
-        '
         'txtSearchKey
         '
-        Me.txtSearchKey.Location = New System.Drawing.Point(203, 40)
+        Me.txtSearchKey.Location = New System.Drawing.Point(199, 43)
         Me.txtSearchKey.Name = "txtSearchKey"
         Me.txtSearchKey.Size = New System.Drawing.Size(185, 22)
         Me.txtSearchKey.TabIndex = 56
@@ -106,10 +90,11 @@ Partial Class frmSalesTransView
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label2.Location = New System.Drawing.Point(36, 43)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 17)
+        Me.Label2.Size = New System.Drawing.Size(136, 20)
         Me.Label2.TabIndex = 55
         Me.Label2.Text = "Sale OR Number"
         '
@@ -261,21 +246,11 @@ Partial Class frmSalesTransView
         Me.Label13.TabIndex = 2
         Me.Label13.Text = "OR Number"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._21
-        Me.PictureBox2.Location = New System.Drawing.Point(22, 21)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(72, 66)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 37
-        Me.PictureBox2.TabStop = False
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label1.ForeColor = System.Drawing.Color.Navy
         Me.Label1.Location = New System.Drawing.Point(104, 36)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -291,17 +266,6 @@ Partial Class frmSalesTransView
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1202, 119)
         Me.Panel1.TabIndex = 59
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.PictureBox1.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__5_
-        Me.PictureBox1.Location = New System.Drawing.Point(858, -67)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(306, 277)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'btnClear
         '
@@ -331,6 +295,27 @@ Partial Class frmSalesTransView
         Me.btnSaleTransClose.Text = "Close"
         Me.btnSaleTransClose.UseVisualStyleBackColor = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._23
+        Me.PictureBox2.Location = New System.Drawing.Point(22, 21)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(72, 66)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 37
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PictureBox1.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__5_
+        Me.PictureBox1.Location = New System.Drawing.Point(858, -67)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(306, 277)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'frmSalesTransView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -349,8 +334,8 @@ Partial Class frmSalesTransView
         CType(Me.SalesTransDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -374,7 +359,6 @@ Partial Class frmSalesTransView
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
-    Friend WithEvents btnSearch As System.Windows.Forms.Button
     Friend WithEvents txtSearchKey As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents SalesTransDataGridView As System.Windows.Forms.DataGridView

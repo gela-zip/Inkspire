@@ -80,7 +80,7 @@ Partial Class frmEmpDelete
         Me.TextBox5.Enabled = False
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.TextBox5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TextBox5.Location = New System.Drawing.Point(168, 13)
+        Me.TextBox5.Location = New System.Drawing.Point(180, 13)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(176, 26)
         Me.TextBox5.TabIndex = 40
@@ -249,7 +249,7 @@ Partial Class frmEmpDelete
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__6_2
+        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._191
         Me.PictureBox2.Location = New System.Drawing.Point(22, 21)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(72, 66)
@@ -261,7 +261,7 @@ Partial Class frmEmpDelete
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label1.ForeColor = System.Drawing.Color.Navy
         Me.Label1.Location = New System.Drawing.Point(104, 36)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"

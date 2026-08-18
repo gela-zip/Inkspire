@@ -118,7 +118,7 @@ Partial Class frmCustAdd
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__6_2
+        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._191
         Me.PictureBox2.Location = New System.Drawing.Point(22, 21)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(72, 66)
@@ -130,7 +130,7 @@ Partial Class frmCustAdd
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label1.ForeColor = System.Drawing.Color.Navy
         Me.Label1.Location = New System.Drawing.Point(104, 36)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -148,7 +148,7 @@ Partial Class frmCustAdd
         Me.GroupBox6.Controls.Add(Me.Label9)
         Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.GroupBox6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox6.Location = New System.Drawing.Point(22, 159)
+        Me.GroupBox6.Location = New System.Drawing.Point(22, 157)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(401, 147)
         Me.GroupBox6.TabIndex = 4
@@ -214,7 +214,7 @@ Partial Class frmCustAdd
         Me.GroupBox3.Controls.Add(Me.currDisc15)
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox3.Location = New System.Drawing.Point(457, 218)
+        Me.GroupBox3.Location = New System.Drawing.Point(457, 219)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(401, 68)
         Me.GroupBox3.TabIndex = 10

@@ -40,16 +40,16 @@ Partial Class frmCustDelete
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.currDisc13 = New System.Windows.Forms.RadioButton()
-        Me.currDisc8 = New System.Windows.Forms.RadioButton()
-        Me.currDisc15 = New System.Windows.Forms.RadioButton()
         Me.txtCustId = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.currDisc13 = New System.Windows.Forms.RadioButton()
+        Me.currDisc8 = New System.Windows.Forms.RadioButton()
+        Me.currDisc15 = New System.Windows.Forms.RadioButton()
         Me.Panel2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
@@ -57,21 +57,21 @@ Partial Class frmCustDelete
         Me.Panel3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.GhostWhite
+        Me.Panel2.Controls.Add(Me.GroupBox3)
         Me.Panel2.Controls.Add(Me.GroupBox4)
         Me.Panel2.Controls.Add(Me.GroupBox5)
         Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.GroupBox6)
-        Me.Panel2.Controls.Add(Me.GroupBox3)
         Me.Panel2.Controls.Add(Me.txtCustId)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Location = New System.Drawing.Point(26, 133)
@@ -125,7 +125,7 @@ Partial Class frmCustDelete
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources.InkSpire__6_2
+        Me.PictureBox2.Image = Global.InfoTech_31_Inkspire_Japin_So_Yee.My.Resources.Resources._191
         Me.PictureBox2.Location = New System.Drawing.Point(22, 21)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(72, 66)
@@ -137,7 +137,7 @@ Partial Class frmCustDelete
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label1.ForeColor = System.Drawing.Color.Navy
         Me.Label1.Location = New System.Drawing.Point(104, 36)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -170,7 +170,7 @@ Partial Class frmCustDelete
         Me.txtCustSearchId.Enabled = False
         Me.txtCustSearchId.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.txtCustSearchId.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtCustSearchId.Location = New System.Drawing.Point(168, 13)
+        Me.txtCustSearchId.Location = New System.Drawing.Point(178, 13)
         Me.txtCustSearchId.Name = "txtCustSearchId"
         Me.txtCustSearchId.Size = New System.Drawing.Size(176, 26)
         Me.txtCustSearchId.TabIndex = 1
@@ -197,7 +197,7 @@ Partial Class frmCustDelete
         Me.GroupBox6.Controls.Add(Me.Label9)
         Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.GroupBox6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox6.Location = New System.Drawing.Point(22, 157)
+        Me.GroupBox6.Location = New System.Drawing.Point(22, 148)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(401, 147)
         Me.GroupBox6.TabIndex = 4
@@ -258,56 +258,6 @@ Partial Class frmCustDelete
         Me.Label9.Size = New System.Drawing.Size(88, 20)
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "Last name"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.currDisc13)
-        Me.GroupBox3.Controls.Add(Me.currDisc8)
-        Me.GroupBox3.Controls.Add(Me.currDisc15)
-        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.GroupBox3.Location = New System.Drawing.Point(457, 218)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(401, 68)
-        Me.GroupBox3.TabIndex = 10
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Current Discount"
-        '
-        'currDisc13
-        '
-        Me.currDisc13.AutoSize = True
-        Me.currDisc13.Enabled = False
-        Me.currDisc13.Location = New System.Drawing.Point(159, 29)
-        Me.currDisc13.Name = "currDisc13"
-        Me.currDisc13.Size = New System.Drawing.Size(63, 24)
-        Me.currDisc13.TabIndex = 12
-        Me.currDisc13.TabStop = True
-        Me.currDisc13.Text = "13%"
-        Me.currDisc13.UseVisualStyleBackColor = True
-        '
-        'currDisc8
-        '
-        Me.currDisc8.AutoSize = True
-        Me.currDisc8.Enabled = False
-        Me.currDisc8.Location = New System.Drawing.Point(48, 29)
-        Me.currDisc8.Name = "currDisc8"
-        Me.currDisc8.Size = New System.Drawing.Size(54, 24)
-        Me.currDisc8.TabIndex = 11
-        Me.currDisc8.TabStop = True
-        Me.currDisc8.Text = "8%"
-        Me.currDisc8.UseVisualStyleBackColor = True
-        '
-        'currDisc15
-        '
-        Me.currDisc15.AutoSize = True
-        Me.currDisc15.Enabled = False
-        Me.currDisc15.Location = New System.Drawing.Point(283, 29)
-        Me.currDisc15.Name = "currDisc15"
-        Me.currDisc15.Size = New System.Drawing.Size(63, 24)
-        Me.currDisc15.TabIndex = 13
-        Me.currDisc15.TabStop = True
-        Me.currDisc15.Text = "15%"
-        Me.currDisc15.UseVisualStyleBackColor = True
         '
         'txtCustId
         '
@@ -380,6 +330,53 @@ Partial Class frmCustDelete
         Me.btnSave.Text = "Delete"
         Me.btnSave.UseVisualStyleBackColor = False
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.currDisc13)
+        Me.GroupBox3.Controls.Add(Me.currDisc8)
+        Me.GroupBox3.Controls.Add(Me.currDisc15)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.GroupBox3.Location = New System.Drawing.Point(457, 210)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(401, 68)
+        Me.GroupBox3.TabIndex = 11
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Current Discount"
+        '
+        'currDisc13
+        '
+        Me.currDisc13.AutoSize = True
+        Me.currDisc13.Location = New System.Drawing.Point(159, 29)
+        Me.currDisc13.Name = "currDisc13"
+        Me.currDisc13.Size = New System.Drawing.Size(63, 24)
+        Me.currDisc13.TabIndex = 6
+        Me.currDisc13.TabStop = True
+        Me.currDisc13.Text = "13%"
+        Me.currDisc13.UseVisualStyleBackColor = True
+        '
+        'currDisc8
+        '
+        Me.currDisc8.AutoSize = True
+        Me.currDisc8.Location = New System.Drawing.Point(48, 29)
+        Me.currDisc8.Name = "currDisc8"
+        Me.currDisc8.Size = New System.Drawing.Size(54, 24)
+        Me.currDisc8.TabIndex = 5
+        Me.currDisc8.TabStop = True
+        Me.currDisc8.Text = "8%"
+        Me.currDisc8.UseVisualStyleBackColor = True
+        '
+        'currDisc15
+        '
+        Me.currDisc15.AutoSize = True
+        Me.currDisc15.Location = New System.Drawing.Point(283, 29)
+        Me.currDisc15.Name = "currDisc15"
+        Me.currDisc15.Size = New System.Drawing.Size(63, 24)
+        Me.currDisc15.TabIndex = 7
+        Me.currDisc15.TabStop = True
+        Me.currDisc15.Text = "15%"
+        Me.currDisc15.UseVisualStyleBackColor = True
+        '
         'frmCustDelete
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -401,10 +398,10 @@ Partial Class frmCustDelete
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -415,10 +412,6 @@ Partial Class frmCustDelete
     Friend WithEvents dateTimeCustDiscExp As System.Windows.Forms.DateTimePicker
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents currDisc13 As System.Windows.Forms.RadioButton
-    Friend WithEvents currDisc8 As System.Windows.Forms.RadioButton
-    Friend WithEvents currDisc15 As System.Windows.Forms.RadioButton
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
@@ -436,4 +429,8 @@ Partial Class frmCustDelete
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents txtCustId As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents currDisc13 As System.Windows.Forms.RadioButton
+    Friend WithEvents currDisc8 As System.Windows.Forms.RadioButton
+    Friend WithEvents currDisc15 As System.Windows.Forms.RadioButton
 End Class

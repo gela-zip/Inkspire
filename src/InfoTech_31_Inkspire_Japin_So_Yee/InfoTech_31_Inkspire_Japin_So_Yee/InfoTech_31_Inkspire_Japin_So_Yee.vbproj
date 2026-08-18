@@ -46,6 +46,11 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IBM.Data.DB2, Version=9.7.4.4, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\IBM\SQLLIB\BIN\netf40\IBM.Data.DB2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -76,6 +81,12 @@
     <Compile Include="frmCustAdd.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmCustAudit.Designer.vb">
+      <DependentUpon>frmCustAudit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmCustDelete.Designer.vb">
       <DependentUpon>frmCustDelete.vb</DependentUpon>
     </Compile>
@@ -88,10 +99,22 @@
     <Compile Include="frmCustEdit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmCustView.Designer.vb">
+      <DependentUpon>frmCustView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmEmpAdd.Designer.vb">
       <DependentUpon>frmEmpAdd.vb</DependentUpon>
     </Compile>
     <Compile Include="frmEmpAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpAudit.Designer.vb">
+      <DependentUpon>frmEmpAudit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpAudit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEmpDelete.Designer.vb">
@@ -106,10 +129,22 @@
     <Compile Include="frmEmpEdit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmEmpView.Designer.vb">
+      <DependentUpon>frmEmpView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmItemAdd.Designer.vb">
       <DependentUpon>frmItemAdd.vb</DependentUpon>
     </Compile>
     <Compile Include="frmItemAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemAudit.Designer.vb">
+      <DependentUpon>frmItemAudit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemAudit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmItemDelete.Designer.vb">
@@ -124,6 +159,12 @@
     <Compile Include="frmItemEdit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmItemView.Designer.vb">
+      <DependentUpon>frmItemView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +176,12 @@
       <DependentUpon>frmSalesTransAdd.vb</DependentUpon>
     </Compile>
     <Compile Include="frmSalesTransAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesTransAudit.Designer.vb">
+      <DependentUpon>frmSalesTransAudit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesTransAudit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSalesTransView.Designer.vb">
@@ -163,14 +210,23 @@
     <EmbeddedResource Include="frmCustAdd.resx">
       <DependentUpon>frmCustAdd.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCustAudit.resx">
+      <DependentUpon>frmCustAudit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCustDelete.resx">
       <DependentUpon>frmCustDelete.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCustEdit.resx">
       <DependentUpon>frmCustEdit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCustView.resx">
+      <DependentUpon>frmCustView.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEmpAdd.resx">
       <DependentUpon>frmEmpAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpAudit.resx">
+      <DependentUpon>frmEmpAudit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpDelete.resx">
       <DependentUpon>frmEmpDelete.vb</DependentUpon>
@@ -178,8 +234,14 @@
     <EmbeddedResource Include="frmEmpEdit.resx">
       <DependentUpon>frmEmpEdit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpView.resx">
+      <DependentUpon>frmEmpView.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmItemAdd.resx">
       <DependentUpon>frmItemAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemAudit.resx">
+      <DependentUpon>frmItemAudit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmItemDelete.resx">
       <DependentUpon>frmItemDelete.vb</DependentUpon>
@@ -187,11 +249,17 @@
     <EmbeddedResource Include="frmItemEdit.resx">
       <DependentUpon>frmItemEdit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmItemView.resx">
+      <DependentUpon>frmItemView.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSalesTransAdd.resx">
       <DependentUpon>frmSalesTransAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesTransAudit.resx">
+      <DependentUpon>frmSalesTransAudit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSalesTransView.resx">
       <DependentUpon>frmSalesTransView.vb</DependentUpon>
@@ -232,6 +300,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\InkSpire %286%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InkSpire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InkSpire %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

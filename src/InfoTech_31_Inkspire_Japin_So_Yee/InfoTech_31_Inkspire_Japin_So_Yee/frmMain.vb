@@ -50,4 +50,33 @@ Public Class frmMain
     Private Sub btnSalesTransView_Click(sender As Object, e As EventArgs) Handles btnSalesTransView.Click
         frmSalesTransView.Show()
     End Sub
+    
+    Private Sub btnCustAudit_Click(sender As Object, e As EventArgs) Handles btnCustAudit.Click
+        frmCustAudit.Show()
+    End Sub
+
+    Private Sub btnEmpAudit_Click(sender As Object, e As EventArgs) Handles btnEmpAudit.Click
+        frmEmpAudit.Show()
+    End Sub
+
+    Private Sub btnItemAudit_Click(sender As Object, e As EventArgs) Handles btnItemAudit.Click
+        frmItemAudit.Show()
+    End Sub
+
+    Private Sub btnSalesTransAudit_Click(sender As Object, e As EventArgs) Handles btnSalesTransAudit.Click
+        frmSalesTransAudit.Show()
+    End Sub
+
+    
+    Private Sub btnEmpView_Click(sender As Object, e As EventArgs) Handles btnEmpView.Click
+        frmEmpView.Show()
+    End Sub
+
+    Private Sub btnCustView_Click(sender As Object, e As EventArgs) Handles btnCustView.Click
+        frmCustView.Show()
+    End Sub
+
+    Private Sub btnItemView_Click(sender As Object, e As EventArgs) Handles btnItemView.Click
+        frmItemView.Show()
+    End Sub
 End Class
